@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+       <title>Review  </title
+ </head>
+<body>
+    <style>
+        body{
+            background-color: #D1CFE2;
+            font-family: Arial,Arial, Helvetica, sans-serif;
+        }
+        h1{
+            text-align: center;
+            text-shadow: 5px 5px #92B2CF;
+        }
+        #confirmacion{
+            max: width 600px;
+            margin:auto;
+            padding: 20px;
+            background-color: #Cldff0;
+            box-shadow: 20px 10px 10px #8d99ae;
+            border-radius: 5px;
+        }
+        #confirmacion label{
+           font-family:´francin Gotnic Medium´.´Arial Narrow´,Arial, sans-serif;
+           display: block;
+           margin-top: 10px;
+           font-weight: bolder;
+        }
+        #confirmacion input #confirmacion select{
+            width:calc(100%, -200px);
+            padding: 10px;
+            margin-top: 5px;
+        }
+        #confirmacion button{
+            width:auto;
+            padding: 10px 30px;
+            font-size: 18px;
+            display: block;
+            margin: 20px auto;
+            background-color: #88ccf1;
+            border-radius: 10px;
+        }
+        #confirmacion  div{
+            margin-top: 15px;
+            padding: 8px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+        }
+        #confirmacion hr{
+            border-top: 2px solid #eee;
+        }
+        #confirmacion div{
+            font-size: 14px;
+            color: #555;
+        </style>
+        <div style= "margin: 24px;">
+        </div>
+        <h1>Confirmar pedido</h1>
+
+    <form id="confirmacion">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre id="nombre" placeholder="Nombre Y Apellido" required>
+        <label for="direccion">Direccion</label>
+        <input type="text" name="direccion" id="direccion" placeholder="calle,numero,colonia" required
+        <label for="telefono">Telefono</label>
+        <input type="text"name="telefono" id="telefono" placeholder="xxx-xxx-xxx" required>
+        <label for="email">E-mail</label>
+        <input type="email" name="email " id="email" placeholder="tuusuario@servidor.com"required>
+        <selectname="paymentMethod" id="paymentMethod">
+          <option value="creditCard">Tarjeta de credito</option>
+          <option value="paypal">paypal</option>
+          <option value="efectivo">Efectivo</option>
+        <select>
+            <button type="button" onclick="submit0rder()">confirmar pedido</button>
+        </form>
+        <script>
+            window.onload=function(){
+                const params= new URLSearchParams(window.location.search);
+                document.getElementById("confirmacion").appendChild(document createElement(hr));
+                for(const key,value of params.entries()){
+                    const infoDiv =document.createElement(div);
+                    infoDiv.textcontent= ${key}: ${value};
+                    document.getElementById(conf)
+    </body>
+   </html>
